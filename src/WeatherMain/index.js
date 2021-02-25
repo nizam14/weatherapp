@@ -99,7 +99,6 @@ render(){
       onClick={this.weatherShow}>Search Weather</Button>
     </InputGroup.Append>
   </InputGroup>
-
         </Col>
 </Row>
     </Container>
@@ -109,7 +108,6 @@ render(){
         this.state.arryEmy.map((ele, i)=>{
             return(        
                 <Col md="3" className="mb-3">
-                    
                         <Card>
                             <Card.Header as="h5">{ele.name}<span className="text-right" onClick={()=>this.weatherDelete(i)}>X</span></Card.Header>
                             <Card.Body className="text-center p-2" >
@@ -123,7 +121,6 @@ render(){
                                 {/* <div onClick={()=>this.moreDetail(ele)} style={{textDecoration:"underline",cursor:"pointer"}}>More Detail</div> */}
                             </Card.Body>
                         </Card>
-                 
                 </Col>                            
             )
         })
